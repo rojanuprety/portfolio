@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rojan Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c6f9491a97.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+<!--            <img src="Images/logo.png" class="logo">-->
+            <a href="Images/RojanResume.pdf" download class="btn">Download CV</a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software QA Engineer | 2+ years Experience</p>
+            <h1>Hi, I'm <span class="typing-effect">Er. Rojan</span><br>Uprety From Nepal</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="images/rojan2.png">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-title">About Me</h1>
+                <p class = "sub-title-p">
+                    Hi, I'm Rojan Uprety, a passionate Softwaer QA Engineer, where I focus on delivering Quality Assurance as a Service (QaaS) to help businesses build reliable, high-performing software. My journey in QA has been nothing short of exciting, with experiences spanning across domains like banking, e-commerce, and social media, ensuring seamless functionality and user satisfaction for both web and mobile applications.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software QA</span><br>Functional Testing, Non-Functional Testing(Jmeter, k6, Cypress)</li>
+                        <li><span>UI/Backend Automation </span><br>Selenium Java, Jmeter, Postman</li>
+                        <li><span>Web Development</span><br>Designing Web Interfaces</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2 years | Software QA Engineer</span><br>F1Soft International</li>
+                        <li><span>4 Months |  Software Engineer Intern</span><br>Cotiviti</li>
+                        <li><span>6 Months | QA Trainee</span><br>Digipearl</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BE Computer Engineering</span><br>Kathmandu University</li>
+                        <li><span>+2 Science</span><br>Prerana Science College</li>
+                        <li><span>SLC</span><br>Vidya Memorial School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-microscope"></i>
+                <h2>Manual Testing</h2>
+                <p>Ensure seamless functionality with meticulous manual testing, focusing on uncovering bugs through user-centric test scenarios.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Performance Testing</h2>
+                <p>Optimize application speed and scalability with in-depth performance testing to handle peak loads effectively.</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Backend/UI Automation </h2>
+                <p>Streamline testing processes with robust backend and UI automation, ensuring accuracy and efficiency across workflows.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work1.jpg">
+                <div class="layer">
+                    <h3>Software QA</h3>
+                    <p class = "p">• Conducted comprehensive manual and automated testing to identify and resolve defects.</p>
+                    <p class = "p">• Designed test plans, cases, and scenarios to ensure full application coverage.</p>
+                    <p class = "p">• Collaborated with development teams to improve software quality and user experience.</p>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work2.jpg">
+                <div class="layer">
+                    <h3>Performance Tester</h3>
+                    <p class = "p">• Simulated user workloads using tools like JMeter and k6 to analyze system performance.</p>
+                    <p class = "p">• Identified bottlenecks and recommended optimizations for high-traffic applications.</p>
+                    <p class = "p">• Executed load, stress, and endurance testing to validate application scalability.</p>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work3.jpg">
+                <div class="layer">
+                    <h3>UI/Backend Automation</h3>
+                    <p class = "p">• Built reusable test scripts using Selenium for UI validation and API automation frameworks for backend testing.</p>
+                    <p class = "p">• Integrated automated tests with CI/CD pipelines to ensure faster and reliable deployments.</p>
+                    <p class = "p">• Automated workflows to enhance testing efficiency and reduce execution time.</p>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact</h1>
+        <div class="row">
+            <!-- Left Side Contact Info -->
+            <div class="contact-left">
+                <p><i class="fa-solid fa-phone"></i> +977-9865382115</p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:rojan.uprety@gmail.com" style="text-decoration: none; color: inherit;">
+                        rojan.uprety@gmail.com
+                    </a>
+                </p>
+                <a href="Images/RojanResume.pdf" download class="btn">Download CV</a>
+            </div>
+
+            <!-- Right Side Contact Form -->
+            <div class="contact-right">
+                <form id="contact-form">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        // Remove active classes from all links and contents
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        // Add active classes to the clicked tab and corresponding content
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "JDiHiMCdyVrOmravK",
+      });
+   })();
+
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Collect form data
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        console.log("Email:", email);
+        console.log("Message:", message);
+
+
+        // Send email using EmailJS
+        emailjs.send("service_akbrvhq", "template_sbnd1sp", {
+            to_email: "rojan.uprety@gmail.com",
+            from_email: email,
+            message: message
+        }).then(
+            function (response) {
+                alert("Message sent successfully!");
+                console.log("SUCCESS", response);
+            },
+            function (error) {
+                alert("Failed to send message. Please try again.");
+                console.log("FAILED", error);
+            }
+        );
+
+        // Clear the form
+        document.getElementById("contact-form").reset();
+    });
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    var menuLinks = document.querySelectorAll("nav ul li a");
+
+    // Open menu
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    // Close menu
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+    // Close sidebar and scroll smoothly to the section
+    menuLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+            closemenu(); // Close the menu
+            const targetId = this.getAttribute("href"); // Get the target section ID
+            if (targetId.startsWith("#")) {
+                e.preventDefault();
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: "smooth", // Smooth scrolling
+                });
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Copyright Claim. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</html>
